@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Chat</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 2rem;
+    }
+    #chat {
+      border: 1px solid #ccc;
+      height: 300px;
+      overflow-y: auto;
+      padding: 1rem;
+      margin-bottom: 1rem;
+    }
+    #chat p {
+      margin: 0.5rem 0;
+    }
+    #controls {
+      display: flex;
+      gap: 0.5rem;
+    }
+    #userInput {
+      flex: 1;
+    }
+  </style>
+</head>
+<body>
+  <h1>AI Chat</h1>
+  <div>
+    <label>API Key: <input type="password" id="apiKey" placeholder="OpenAI API key" /></label>
+  </div>
+  <div id="chat"></div>
+  <div id="controls">
+    <input id="userInput" type="text" placeholder="Ask a question..." />
+    <button id="sendBtn">Send</button>
+  </div>
+  <script src="chat.js"></script>
+</body>
+</html>
